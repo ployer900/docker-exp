@@ -10,5 +10,6 @@ app.get('/', function(req, res) {
 let port = process.env.HTTP_PORT || 9000
 app.listen(port, () => {
     console.log('build project using jenkins tool, notifing project owner using email');
+    console.log('jenkins ssh remote server');
     console.log('service listening on port %s', port);
 });
